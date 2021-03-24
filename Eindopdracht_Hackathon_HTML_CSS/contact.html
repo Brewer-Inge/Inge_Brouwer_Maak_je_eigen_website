@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <title>Neem hier contact met mij op</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body class="contact">
+    <header>
+        <nav class="topnav">
+            <a href="index.html">Home</a>
+            <a href="about.html">Meer informatie over mij</a>
+            <a href="playing_music.html">Foto's van mij als muzikant</a>
+            <a class="active" href="contact.html">Contact</a>
+        </nav>
+        <div>
+            <img class="picture" src="Saxofoon_muzieknoten.jpg" alt="Saxofoon_muzieknoten"
+                style="width: 1000px; max-width: 96%; height: auto" />
+        </div>
+        <h1>Contactformulier</h1>
+    </header>
+    <main>
+        <form name="contact" method="POST" data-netlify="true">
+            <label for="Naam">Naam:</label>
+            <input type="text" name="Naam" />
+            <br><br>
+            <label for="email">Emailadres:</label>
+            <input type="email" name="email" />
+            <br><br>
+            <label for="Telefoonnummer">Telefoonnummer:</label>
+            <input type="tel" name="Telefoonnummer" />
+            <br><br>
+            <label for="Geboortedatum">Geboortedatum: </label>
+            <input type="date" name="Geboortedatum" />
+            <br><br>
+            Geslacht:<br>
+            <input type="radio" id="Man" name="Geslacht" value="Man">
+            <label for="Man">Man</label><br>
+            <input type="radio" id="Vrouw" name="Geslacht" value="Vrouw">
+            <label for="Vrouw">Vrouw</label><br>
+            <br><br>
+            <label for="Kleur">Kleur van je instrument</label>
+            <select name="Kleur" id="Kleur">
+                <option value="Goud">Goud</option>
+                <option value="Zilver">Zilver</option>
+                <option value="Anders">Anders</option>
+            </select>
+            <br><br>
+            Onder welke groep valt je instrument:<br>
+            <input type="checkbox" id="instrument1" name="instrument1" value="Houtblazers">
+            <label for="instrument1"> Houtblazers</label><br>
+            <input type="checkbox" id="instrument2" name="instrument2" value="Koperblazers">
+            <label for="instrument2"> Koperblazers</label><br>
+            <input type="checkbox" id="instrument3" name="instrument3" value="Slagwerk">
+            <label for="instrument3"> Slagwerk</label>
+            <br><br>
+            <label>Uw vraag: <textarea name="message" rows="10" cols="30"></textarea></label>
+            <br><br>
+            <label>Upload je bestand: <input type="file" name="upload"></label>
+            <br><br>
+            <label>Link naar je eigen website: <input type="url" name="url"></label>
+            <br><br>
+            <input type="reset" name="reset" />
+            <button type="submit">Verzenden</button>
+        </form>
+    </main>
+    <footer>
+
+
+    </footer>
+</body>
+
+
+
+</html>
